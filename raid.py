@@ -47,6 +47,7 @@ async def infos(ctx):
 name="NukeCord | Informations",
 description="""
 NukeCord is the best free, self-hosted and open source raid bot for Discord. It is only distributed for educational purposes, we do not encourage the destruction of Discord servers and remind you to respect the Discord Guidelines.
+You can find the source code here : https://github.com/saumonarcenciel/nukecord. 
 """,
 color=0x2004AC)
     await ctx.send(embed=embed)
