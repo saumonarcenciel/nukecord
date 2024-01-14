@@ -84,4 +84,4 @@ async def spam(ctx, message, num_times=5):
 
 
 
-bot.run("MTEyNTcyMzkzMjAzNzc0MjY1Mw.G8Oo8I.GN7kl4auSoDtVS32WQ3sLA2LNlcrHhMXoYQfjo")
+bot.run("token")
